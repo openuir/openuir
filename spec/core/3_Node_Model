@@ -1,0 +1,29 @@
+## 3. Node Model
+
+### 3.1 Nodes
+
+All UI is composed of nodes.
+
+Each node MUST have:
+- A stable NodeID
+- A node type
+- Zero or more properties
+- Zero or more child nodes
+
+### 3.2 Node Identity
+
+NodeIDs MUST be:
+- Globally unique within a UI tree
+- Stable across updates
+- Producer-defined
+
+Backends MUST NOT generate NodeIDs.
+
+### 3.3 Tree Semantics
+
+The UI tree is:
+- Ordered
+- Hierarchical
+- Retained
+
+Instruction order MUST NOT be used to infer tree structure.
